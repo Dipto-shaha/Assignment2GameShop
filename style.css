@@ -102,10 +102,13 @@ nav img {
   background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
   color: #fff;
   border: 0;
+  cursor: pointer;
 }
 .button2 {
   background: #4ec5f7;
+  cursor: pointer;
 }
+
 /* Carde Section */
 .cardsection {
   margin: 50px 240px;
@@ -200,7 +203,30 @@ nav img {
   bottom: -20px;
   left: -110px;
 }
-
+.SpecialforImageOverlay {
+  position: relative;
+}
+.imageOverLay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding-left: 100px;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+.imageOverLay p {
+  font-size: 10px;
+  font-weight: 800;
+  color: #ff42a5;
+}
+.imageOverLay:hover {
+  opacity: 1;
+}
 /* 2nd Last section */
 .containerOfSmallImage {
   align-items: center;
